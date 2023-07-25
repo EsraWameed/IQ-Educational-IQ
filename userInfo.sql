@@ -16,3 +16,7 @@ CREATE TABLE posts (
 );
 /* to create indexes on some columns for better query performance */
 CREATE INDEX idx_users_username ON users (username);
+
+/* inclding initial data to script*/
+INSERT INTO users (username, email, password) VALUES
+    ('Esra_Al', 'esra@yahoo.com', 'some_random_pass');
